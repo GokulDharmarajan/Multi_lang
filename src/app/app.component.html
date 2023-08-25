@@ -1,0 +1,22 @@
+<div class="card">
+  <span class="form-inline">
+    <p-dropdown [options]="translate.getLangs()" [(ngModel)]="selectedLang" (ngModelChange)="switchLang($event)">
+    </p-dropdown>
+  </span>
+  <ul>
+    <li>
+      <h1>{{'Sitetitle'|translate }}</h1>
+    </li>
+    <li>{{'Name'|translate }}</li>
+    <li>{{'Age'|translate}}</li>
+    <li>{{'Gender'|translate}}</li>
+    <li>{{'Email'|translate}}</li>
+    <li>{{'PhoneNo'|translate}}</li>
+    <li>{{'City'|translate}}</li>
+    <li>{{'Taluk'|translate}}</li>
+    <li>{{'District'|translate}}</li>
+    <li>{{'State'|translate}}</li>
+    <li>{{'Country'|translate}}</li>
+  </ul>
+  <button (click)="clear()" pButton>clear</button>
+</div>
